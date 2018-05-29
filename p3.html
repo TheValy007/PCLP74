@@ -1,0 +1,82 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"><html><head>
+  
+                                                
+  <title>p1</title><meta http-equiv="content-type" content="text/html; charset=ISO-8859-1"></head>
+
+<body bgcolor="#ffff99" text="#000000" link="#0000ee" alink="#0000ee" vlink="#551a8b">
+              
+<address><a href="dreapta.html"><img src="p3_files/47311-thin-gray-back.png" alt="" width="200" height="90" border="0">
+     </a><br>
+     <br>
+    </address>
+ <b>Aplicatia 1</b><br>
+ <br>
+ //clasa de baza<br>
+     class Forma<br>
+     {<br>
+         //membri variabila<br>
+         protected double _inaltime;<br>
+         protected double _latime;<br>
+         //constructor pentru clasa Forma<br>
+         public Forma(double inaltime, 
+double latime)<br>
+         {<br>
+             _inaltime 
+= inaltime;<br>
+             _latime 
+= latime;<br>
+         }<br>
+     }<br>
+     //clasa Dreptunghi mosteneste<br>
+     //clasa Forma<br>
+     class Dreptunghi : Forma<br>
+     {<br>
+         //membru variabila privat<br>
+         string stil;<br>
+ <br>
+         //utilizam base pentru<br>
+         //a executa constructorul <br>
+         //clasei de vaza<br>
+         public Dreptunghi(string s, double 
+inaltime, double latime)<br>
+         : base(inaltime, latime)<br>
+         {<br>
+             stil
+= s;<br>
+         }<br>
+     }<br>
+ <br>
+ <b>Aplicatia 2</b><br>
+ <br>
+   //clasa de baza<br>
+     class Forma<br>
+     {<br>
+         public double inaltime;<br>
+         public double latime;<br>
+         public void AfiseazaDimensiune()<br>
+         { <br>
+             Console.WriteLine("inaltime: 
+{0}, latime: {1}",inaltime,latime);<br>
+         }<br>
+     }<br>
+ <br>
+ <b>Aplicatia 3</b><br>
+ <br>
+  //clasa Dreptunghi mosteneste<br>
+     //clasa Forma<br>
+     class Dreptunghi : Forma<br>
+     {<br>
+         public double Aria()<br>
+         {<br>
+             //clasa 
+Dreptunghi poate<br>
+             //referi 
+membrii clasei Forma<br>
+             //ca
+membri proprii<br>
+             return 
+inaltime * latime;<br>
+         }<br>
+     }<br>
+ <br>
+</body></html>
